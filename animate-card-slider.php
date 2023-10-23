@@ -85,6 +85,9 @@ function card_slider_plugin_assets(){
 
     $plugin_dir_url = plugin_dir_url(__FILE__);
 
+    wp_enqueue_style('bootstrap', $plugin_dir_url.'asset/css/bootstrap.min.css');
+    wp_enqueue_style('owl-min', $plugin_dir_url.'asset/css/owl.carousel.min.css');
+    wp_enqueue_style('owl-theme-default', $plugin_dir_url.'asset/css/owl.theme.default.css');
     wp_enqueue_style('acs-style', $plugin_dir_url.'asset/css/style.css');
     wp_enqueue_script('owl-carousel', $plugin_dir_url.'asset/js/owl.carousel.min.js', ['jquery'], '1.0.0',true);
 }
